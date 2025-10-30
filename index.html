@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <div class="header-content">
+            <h1 class="app-title">To-Do App</h1>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="course.html" class="nav-link">Course</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="todo-app">
+            <form class="input-area">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                
+               <!-- Category Selector -->
+               <select id="category-select" class="category-select">
+                    <option value="Programming">Programming</option>
+                    <option value="Studying">Studying</option>
+                    <option value="Reading">Reading</option>
+                    <option value="Journaling">Journaling</option>
+               </select>
+
+
+                <!-- Priority Selector -->
+                <select id="priority-select" class="priority-select">
+                    <option value="Low">Low</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="High">High</option>
+                </select>
+
+                <button type="submit" id="add-task-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </form>
+
+            <div class="todos-container" id="todos-container">
+                <ul id="task-list"></ul>
+                <img class="empty-image" src="empty.svg" alt="No tasks yet">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
