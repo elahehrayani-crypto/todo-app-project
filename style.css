@@ -487,6 +487,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .team-member-compact:hover {
@@ -818,3 +819,4 @@ body {
         gap: 1rem;
     }
 }
+
